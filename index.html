@@ -1,0 +1,88 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Developed HTML + CSS + Java Script</title>
+  <meta name="description" content="A clean starter template with responsive layout, accessible nav, and theme toggle." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Accessible skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">MySite</a>
+
+      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="themeToggle" class="theme-toggle" aria-pressed="false" title="Toggle light/dark theme">🌙</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Welcome to Your Starter Page</h1>
+        <p class="lede">A minimal, responsive HTML template with separate CSS and JavaScript files. Modify it and build from here.</p>
+        <p>
+          <a class="btn" href="#features">See features</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Features</h2>
+      <ul>
+        <li>Semantic HTML structure</li>
+        <li>Responsive layout (mobile-first)</li>
+        <li>Accessible navigation and skip link</li>
+        <li>Dark / Light theme toggle (persisted)</li>
+      </ul>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>This template gives you a solid foundation: good meta tags, separate styles and scripts, and small JS utilities you commonly need.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <p id="formMsg" role="status" aria-live="polite" class="form-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MySite — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
